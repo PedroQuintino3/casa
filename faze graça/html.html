@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o tigrinhi ta bugado</title>
+    <link rel="stylesheet" href="naoseioquela.css">
+    <style>
+        .bola{
+            background-color: rgb(30, 255, 0);
+        }
+        .bola2{
+            background-color: red;
+        }
+        .bola3{
+            background-color: rgb(255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="viteeum">
+        <div id="player-money">Saldo: R$200</div>
+
+        <div class="escolha">
+            <h1 class="gh">APOSTE</h1><br>
+            <button class="bola" data-bet="5"><h1 class="gh">5</h1></button>
+            <button class="bola" data-bet="10"><h1 class="gh">10</h1></button>
+            <button class="bola" data-bet="20"><h1 class="gh">20</h1></button>
+            <button class="bola" data-bet="50"><h1 class="gh">50</h1></button>
+            <button class="bola" data-bet="100"><h1 class="gh">100</h1></button>
+        </div>
+        
+        <div class="caralho">
+            <div id="deck">
+                <p>🂠</p> <!-- Representação do baralho -->
+            </div>
+            
+                <div id="dealer-hand" class="hand"><div class="escondepika"></div>
+            </div>
+
+            <div class="sua">
+                <div id="player-hand" class="hand"></div>
+            </div>
+            
+            <button onclick="startGame()">Apostar e Distribuir Cartas</button>
+        </div>
+        <div id="game-options" class="hidden">
+            <button id="hit-button">mais uma</button>
+            <button id="stand-button">deixa quieto</button>
+            <button id="double-button">dobro essa porra</button>
+        </div>
+        
+        
+
+    </div>
+    <script src="mendingo.js"></script>
+</body>
+</html>

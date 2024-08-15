@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.viteeum {
+    height: 729px;
+    padding: 0;
+    background-image: url(cassino.jpg);
+    overflow: hidden; /* Evita o colapso de margens */
+
+}
+
+.escolha {
+    display: flex;
+    padding-top: 35%; /* Substitui margin-top por padding-top */
+    justify-content: center; /* Centraliza os elementos horizontalmente */    
+
+}
+
+.game-options {
+    display: flex;
+    padding-top: 20%; /* Substitui margin-top por padding-top */
+    justify-content: center; /* Centraliza os elementos horizontalmente */    
+    display: none;
+}
+
+.gh {
+    font-size: 45px;
+    margin-top: 25px;
+    margin-left: 15px;
+    color: white; /* Ajuste de cor para contraste */
+}
+
+
+
+.loko {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white; /* Ajuste de cor para contraste */
+
+}
+.bola {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-left: 15px;
+    color: white; /* Ajuste de cor para contraste */    
+}
+.bola2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-left: 15px;
+    color: white; /* Ajuste de cor para contraste */    
+}
+.bola3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-left: 15px;
+    color: white; /* Ajuste de cor para contraste */    
+}
+.loko2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white; /* Ajuste de cor para contraste */
+}
+.loko3 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: white; /* Ajuste de cor para contraste */
+}
+#player-money{
+    width: 250px;
+    font-size: 44px;
+    color: white; /* Ajuste de cor para contraste */
+    margin-left: 82%;
+}
+.caralho{
+    margin-top: -50%;
+    margin-left: 45%;
+
+}
+.escondepika {
+    width: 100px; /* Mesma largura da carta */
+    height: 150px; /* Mesma altura da carta */
+    background-color: black;
+    position: absolute; /* Permite posicionar sobre a carta */
+    z-index: 10; /* Deve estar acima das cartas */
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+.card {
+    width: 100px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    transition: transform 1s ease-in-out;
+    font-size: 1.5em;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d; /* Mantém a estrutura 3D durante a animação */
+}
+
+.card .top-left, .card .bottom-right {
+    position: absolute;
+    font-size: 0.8em;
+}
+
+.card .top-left {
+    top: 5px;
+    left: 5px;
+}
+
+.card .bottom-right {
+    bottom: 5px;
+    right: 5px;
+    transform: rotate(180deg);
+}
+
+.card .center {
+    font-size: 2.5em;
+}
+
+.card.suit-spade .center, .card.suit-club .center {
+    color: black;
+}
+
+.card.suit-heart .center, .card.suit-diamond .center {
+    color: red;
+}
+
+.hand {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#deck {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#player-hand .card, #dealer-hand .card {
+    position: static;
+    transform: none;
+    transition: none;
+    display: flex; /* Garanta que as cartas fiquem dentro dos limites */
+    flex-direction: column; /* Posiciona os elementos corretamente dentro da carta */
+    justify-content: space-between; /* Distribui os elementos internamente */
+    align-items: center;
+}
+
